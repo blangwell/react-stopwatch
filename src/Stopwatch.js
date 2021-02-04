@@ -17,7 +17,6 @@ class Stopwatch extends Component {
   handleStart() {
     const interval = setInterval(() => this.setState({counter: this.state.counter + 1}), 1000)
     if (!this.state.running) {
-      this.setState({})
       this.setState({
         interval: interval,
         running: true
